@@ -1,0 +1,9 @@
+ms-dotnettools.csdevkit
+ms-dotnettools.csharp
+ms-dotnettools.vscode-dotnet-runtime
+mvllow.rose-pine
+nonoroazoro.syncing
+rpbritton.zenbones
+teabyii.ayu
+visualstudiotoolsforunity.vstuc
+vscodevim.vim
