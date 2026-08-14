@@ -1,4 +1,5 @@
 {
+    // -------------------------------------------------------------------------
     // ### Text Editor
     "editor.accessibilitySupport": "off",
     "editor.renderLineHighlight": "all",
@@ -39,7 +40,63 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
 
+    // -------------------------------------------------------------------------
     // ### Workbench
+    "workbench.layoutControl.enabled": false,
+    "workbench.localHistory.maxFileEntries": 100,
+    "workbench.navigationControl.enabled": false,
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.reduceTransparency": "auto",
+    "workbench.remoteIndicator.showExtensionRecommendations": false,
+    "workbench.sash.size": 10,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.shadows": false,
+    "workbench.commandPalette.showAskInChat": false,
+    "workbench.statusBar.experimental.fontFamily": "AdwaitaMono Nerd Font Mono",
+    "workbench.statusBar.experimental.fontSize": 14,
+    "workbench.tabs.experimental.fontFamily": "AdwaitaMono Nerd Font Mono",
+    "workbench.tabs.experimental.fontSize": 14,
+
+    // Workbench -> Appearance
+    "workbench.activityBar.compact": true,
     "workbench.colorTheme": "Rosé Pine",
     "workbench.iconTheme": "ayu",
+    "workbench.preferredDarkColorTheme": "Rosé Pine",
+    "workbench.preferredLightColorTheme": "Rosé Pine Dawn",
+    "workbench.sideBar.location": "right",
+    "workbench.tree.expandMode": "doubleClick",
+    "workbench.tree.indent": 14,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.stickyScrollMaxItemCount": 10,
+    "workbench.view.alwaysShowHeaderActions": true,
+
+    // Workbench -> Breadcrumbs
+
+    // Workbench -> Editor Management
+    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.editor.sharedViewState": true,
+    "workbench.editor.showTabIndex": true,
+    "workbench.editor.tabActionCloseVisibility": false,
+    "workbench.editor.titleScrollbarVisibility": "hidden",
+    "workbench.editor.useModal": "off",
+
+    // Workbench -> Settings Editor
+    "workbench.settings.alwaysShowAdvancedSettings": true,
+    "workbench.settings.openDefaultKeybindings": true,
+    "workbench.settings.openDefaultSettings": true,
+
+    // Workbench -> Zen Mode
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+
+    // Workbench -> Screencast Mode
+
+    // Workbench -> Browser
+    "workbench.browser.searchEngine": "duckduckgo",
+    "workbench.browser.showInTitleBar": false,
+    "workbench.browser.enableChatTools": false,
 }
