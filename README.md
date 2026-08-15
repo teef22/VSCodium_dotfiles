@@ -1,5 +1,5 @@
 ## Setup guide
-Put this repo to `~/.config/VSCodium/User`.
+Put this repo to `~/.config/VSCodium/User/`.
 
 To install extensions from `extensions.txt` run:
 ```zsh
