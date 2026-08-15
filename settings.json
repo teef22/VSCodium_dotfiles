@@ -99,4 +99,17 @@
     "workbench.browser.searchEngine": "duckduckgo",
     "workbench.browser.showInTitleBar": false,
     "workbench.browser.enableChatTools": false,
+
+    // -------------------------------------------------------------------------
+    // ### Window
+    "window.autoDetectHighContrast": false,
+    "window.dialogStyle": "custom",
+    "window.enableMenuBarMnemonics": false,
+    "window.menuBarVisibility": "compact",
+    // // each int value equals to +20% scale
+    // // minus means -xxx%
+    // "window.zoomLevel": 1,
+
+    // Window -> New Window
+
 }
