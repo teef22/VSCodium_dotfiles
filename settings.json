@@ -112,4 +112,27 @@
 
     // Window -> New Window
 
+    // -------------------------------------------------------------------------
+    // ### Chat
+
+    // Chat -> Agent
+    "chat.agent.enabled": false,
+    // // allow chat access to network via black / white lists
+    // "chat.agent.networkFilter": true,
+    "chat.checkpoints.showFileChanges": true,
+
+    // Chat -> Appearance
+
+    // Chat -> Sessions
+    "chat.viewProgressBadge.enabled": true,
+
+    // Chat -> Tools
+
+    // Chat -> MCP
+
+    // Chat -> Context
+
+    // Chat -> Inline Chat
+
+    // Chat -> Miscellaneous
 }
