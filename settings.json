@@ -241,6 +241,12 @@
 
     // Application -> Telemetry
     "telemetry.feedback.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "telemetry.editStats.details.enabled": false,
+    "telemetry.editStats.enabled": false,
+    "telemetry.editStats.showDecorations": false,
+    "telemetry.editStats.showStatusBar": false,
+    "telemetry.performance.inputLatencySamplingProbability": 0,
 
     // Application -> Network
 
@@ -248,6 +254,10 @@
 
     // Applicaiton -> Other
 
+    // -------------------------------------------------------------------------
+    // ### Security
 
+    // Security -> Workspace
+    "security.workspace.trust.startupPrompt": "once",
 
 }
