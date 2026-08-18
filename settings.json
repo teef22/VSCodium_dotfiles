@@ -230,5 +230,24 @@
 
     // Features -> Merge Editor
 
+    // -------------------------------------------------------------------------
+    // ### Application
+
+    // Application -> Proxy
+
+    // Application -> Keyboard
+
+    // Application -> Update
+
+    // Application -> Telemetry
+    "telemetry.feedback.enabled": false,
+
+    // Application -> Network
+
+    // Application -> Experimental
+
+    // Applicaiton -> Other
+
+
 
 }
