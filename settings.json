@@ -1,3 +1,6 @@
+// contrubutor: @teef22 (github)
+// review date: 18.08.2026
+
 {
     // -------------------------------------------------------------------------
     // ### Text Editor
@@ -33,7 +36,8 @@
     // Text Editor -> Suggestions
     "editor.suggest.matchOnWordStartOnly": false,
     "editor.suggest.preview": true,
-    "editor.suggest.showStatusBar": true,
+    // // whether to show hints at the bottom of suggestions window
+    // "editor.suggest.showStatusBar": true,
 
     // Text Editor -> Files
     "files.insertFinalNewline": true,
@@ -45,6 +49,7 @@
     "workbench.layoutControl.enabled": false,
     "workbench.localHistory.maxFileEntries": 100,
     "workbench.navigationControl.enabled": false,
+    "workbench.panel.showLabels": false,
     "workbench.productIconTheme": "fluent-icons",
     "workbench.reduceTransparency": "auto",
     "workbench.remoteIndicator.showExtensionRecommendations": false,
@@ -64,7 +69,8 @@
     "workbench.preferredDarkColorTheme": "Rosé Pine",
     "workbench.preferredLightColorTheme": "Rosé Pine Dawn",
     "workbench.sideBar.location": "right",
-    "workbench.tree.expandMode": "doubleClick",
+    // // open directories on double click
+    // "workbench.tree.expandMode": "doubleClick",
     "workbench.tree.indent": 14,
     "workbench.tree.renderIndentGuides": "always",
     "workbench.tree.stickyScrollMaxItemCount": 10,
@@ -135,4 +141,94 @@
     // Chat -> Inline Chat
 
     // Chat -> Miscellaneous
+
+    // -------------------------------------------------------------------------
+    // ### Features
+
+    // Features -> Accessibility Signals
+
+    // Features -> Accessibility
+    // // visually enhance perception of the unfocused editor by dimming it
+    // "accessibility.dimUnfocused.enabled": true,
+    // // opacity of the unfocused editor
+    // "accessibility.dimUnfocused.opacity": 0.8,
+    "accessibility.underlineLinks": true,
+
+    // Features -> Explorer
+    "explorer.incrementalNaming": "smart",
+
+    // Feature -> Search
+    "search.defaultViewMode": "tree",
+    "search.seedOnFocus": true,
+    "search.showLineNumbers": true,
+    "search.smartCase": true,
+    "search.searchView.keywordSuggestions": true,
+
+    // Features -> Debug
+    "debug.breakpointsView.presentation": "tree",
+    "debug.showVariableTypes": true,
+
+    // Features -> Testing
+    "testing.saveBeforeTest": false,
+
+    // Features -> Source Control
+    "scm.alwaysShowRepositories": true,
+    "scm.compactFolders": false,
+    "scm.countBadge": "focused",
+    "scm.defaultViewMode": "tree",
+    "scm.diffDecorationsGutterPattern": {
+        "added": true
+    },
+    "scm.repositories.visible": 0,
+
+    // Features -> Extensions
+
+    // Features -> Terminal
+    "terminal.explorerKind": "both",
+    "terminal.external.linuxExec": "ghostty",
+    "terminal.integrated.confirmOnExit": "hasChildProcesses",
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.initialHint": false,
+    "terminal.integrated.minimumContrastRatio": 1,
+    // // whether to send keyboard shortcut directly to shell
+    // "terminal.integrated.sendKeybindingsToShell": true,
+    "terminal.integrated.splitCwd": "workspaceRoot",
+    "terminal.integrated.suggest.insertTrailingSpace": true,
+    "terminal.integrated.suggest.quickSuggestions": {
+        "commands": "on",
+        "arguments": "on",
+        "unknown": "on"
+    },
+    "terminal.integrated.suggest.showStatusBar": false,
+    "terminal.integrated.suggest.upArrowNavigatesHistory": false,
+    "terminal.integrated.tabs.focusMode": "singleClick",
+    "terminal.integrated.tabs.hideCondition": "never",
+    "terminal.integrated.tabs.showActions": "never",
+    "terminal.integrated.tabs.showActiveTerminal": "never",
+    "terminal.integrated.tabs.title": "${process}${separator}${cwd}",
+    "terminal.sourceControlRepositoriesKind": "both",
+
+    // Features -> Task
+    "task.saveBeforeRun": "prompt",
+    "task.verboseLogging": true,
+
+    // Features -> Problems
+
+    // Features -> Output
+
+    // Features -> Comment
+
+    // Features -> Remote
+
+    // Features -> Timeline
+    "timeline.pageSize": null,
+
+    // Features -> Notebook
+    "notebook.insertFinalNewline": true,
+    "notebook.lineNumbers": "on",
+    "notebook.outline.showCodeCells": true,
+
+    // Features -> Merge Editor
+
+
 }
