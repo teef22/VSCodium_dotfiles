@@ -1,7 +1,15 @@
 *
+
 !.gitignore
+
 !settings.json
 !keybindings.json
 !snippets
 !extensions.txt
+
+!nvim/
+!nvim/init.lua
+!vim/
+!vim/.vimrc
+
 !README.md
