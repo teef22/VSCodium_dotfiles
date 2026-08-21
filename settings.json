@@ -1,11 +1,13 @@
 // contrubutor: @teef22 (github)
-// review date: 18.08.2026
+// review date: 21.08.2026
+// vscodium v1.126.04524
 
 {
     // -------------------------------------------------------------------------
     // ### Text Editor
     "editor.accessibilitySupport": "off",
     "editor.codeLens": false,
+    "editor.lineNumbers": "relative",
     "editor.renderLineHighlight": "all",
     "editor.rulers": [
         80, 100, 120
@@ -281,6 +283,62 @@
 
     // Extensions -> Vim
 
-
-
+    // READ THE DOCS ON PLUGIN
+    "vim.camelCaseMotion.enable": true,
+    "vim.changeWordIncludesWhitespace": true,
+    // // DO NOT set cursor styles, it breaks cursor positioning
+    // "vim.cursorStylePerMode.insert": "block",
+    // "vim.cursorStylePerMode.normal": "block",
+    // "vim.cursorStylePerMode.replace": "block",
+    // "vim.cursorStylePerMode.visual": "block",
+    // "vim.cursorStylePerMode.visualblock": "block",
+    // "vim.cursorStylePerMode.visualline": "block",
+    // READ THE DOCS ON PLUGIN
+    "vim.easymotion": true,
+    "vim.easymotionDimBackground": false,
+    "vim.easymotionIncSearchForegroundColor": "#FF0000",
+    "vim.easymotionMarkerForegroundColorOneChar": "#FF0000",
+    "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00AAFF",
+    "vim.easymotionMarkerForegroundColorTwoCharSecond": "#00AAFF",
+    // uses separate nvim backend to handle VSCodeVim Ex commands (:command)
+    "vim.enableNeovim": true,
+    "vim.foldfix": true,
+    "vim.gdefault": true,
+    "vim.highlightedyank.color": "rgba(250, 240, 170, 0.3)",
+    "vim.highlightedyank.duration": 500,
+    "vim.highlightedyank.enable": true,
+    // add TWO spaces after [. ? !] characters on join / reformat
+    "vim.joinspaces": false,
+    "vim.leader": "<Space>",
+    // remove on odd behaviour for <:> pair
+    "vim.matchpairs": "(:),{:},[:],<:>",
+    // // use nvim config file for nvim backend
+    // // READ DOCS for supported config options
+    "vim.neovimConfigPath": "/home/dmytro/.config/VSCodium/User/nvim/init.lua",
+    "vim.neovimPath": "/usr/bin/nvim",
+    "vim.neovimUseConfigFile": true,
+    // READ THE DOCS ON PLUGIN
+    "vim.replaceWithRegister": true,
+    // // TODO: pick colors
+    // "vim.searchHighlightColor": "\"",
+    // "vim.searchHighlightTextColor": "\"",
+    // "vim.searchMatchColor": "\"",
+    // "vim.searchMatchTextColor": "\"",
+    "vim.shell": "/usr/bin/ghostty",
+    "vim.showMarksInGutter": true,
+    // // built in support for relative line numbers in NORMAL mode only
+    // "vim.smartRelativeLine": true,
+    // READ THE DOCS ON PLUGIN and bind some other key, not the holly 's'
+    "vim.sneak": true,
+    "vim.sneakReplacesF": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    // READ THE DOCS ON PLUGIN 'Surround'
+    // READ THE DOCS ON PLUGIN 'targets.vim'
+    "vim.targets.enable": true,
+    "vim.useSystemClipboard": true,
+    // // use .vimrc file to configure VSCodeVim keybindings (unsure about general settings)
+    // // READ DOCS for supported config options
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "/home/dmytro/.config/VSCodium/User/vim/.vimrc",
+    "vim.visualstar": true,
 }
