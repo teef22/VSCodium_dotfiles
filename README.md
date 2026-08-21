@@ -1,5 +1,5 @@
 ## Setup guide
-Put this repo to `~/.config/VSCodium/User/`.
+Put this repo to `~/.config/VSCodium/User/` for VSCodium and to `~/.config/Code/User/` for VSCode. Remember to change paths in the `.../User/settings.json` (and probably other files) depending on wether you use VSCodium or VSCode.
 
 To install extensions from `extensions.txt` run:
 ```zsh
