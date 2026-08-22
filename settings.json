@@ -273,6 +273,7 @@
     // ...
 
     // Extensions -> Git
+    "git.blame.statusBarItem.enabled": false,
     "git.terminalGitEditor": true,
     "window.menuBarVisibility": "compact",
     "workbench.navigationControl.enabled": false,
