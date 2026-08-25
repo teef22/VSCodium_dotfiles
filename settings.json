@@ -285,7 +285,7 @@
     // Extensions -> Vim
 
     // READ THE DOCS ON PLUGIN
-    "vim.camelCaseMotion.enable": true,
+    // "vim.camelCaseMotion.enable": true,
     "vim.changeWordIncludesWhitespace": true,
     // // DO NOT set cursor styles, it breaks cursor positioning
     // "vim.cursorStylePerMode.insert": "block",
@@ -295,7 +295,7 @@
     // "vim.cursorStylePerMode.visualblock": "block",
     // "vim.cursorStylePerMode.visualline": "block",
     // READ THE DOCS ON PLUGIN
-    "vim.easymotion": true,
+    // "vim.easymotion": true,
     "vim.easymotionDimBackground": false,
     "vim.easymotionIncSearchForegroundColor": "#FF0000",
     "vim.easymotionMarkerForegroundColorOneChar": "#FF0000",
@@ -319,7 +319,7 @@
     "vim.neovimPath": "/usr/bin/nvim",
     "vim.neovimUseConfigFile": true,
     // READ THE DOCS ON PLUGIN
-    "vim.replaceWithRegister": true,
+    // "vim.replaceWithRegister": true,
     // // TODO: pick colors
     // "vim.searchHighlightColor": "\"",
     // "vim.searchHighlightTextColor": "\"",
@@ -330,12 +330,13 @@
     // // built in support for relative line numbers in NORMAL mode only
     // "vim.smartRelativeLine": true,
     // READ THE DOCS ON PLUGIN and bind some other key, not the holly 's'
-    "vim.sneak": true,
+    // "vim.sneak": true,
     "vim.sneakReplacesF": true,
     "vim.sneakUseIgnorecaseAndSmartcase": true,
     // READ THE DOCS ON PLUGIN 'Surround'
+    // "vim.surround": true,
     // READ THE DOCS ON PLUGIN 'targets.vim'
-    "vim.targets.enable": true,
+    // "vim.targets.enable": true,
     "vim.useSystemClipboard": true,
     // // use .vimrc file to configure VSCodeVim keybindings (unsure about general settings)
     // // READ DOCS for supported config options
