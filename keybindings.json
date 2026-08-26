@@ -1,0 +1,32 @@
+// contrubutor: @teef22 (github)
+// review date: 25.08.2026
+// vscodium v1.126.04524
+
+[
+    // // ### Keyboard rule
+    // {
+    //     "key": "",                   // define shortcut (i.e. "ctrl+f") or chord (i.e. "ctrl+m alt+right")
+    //     "command": "",               // one command to execute or "runCommands" with multiple commands specified as array "commands": [...] in "args"
+    //                                  // it is possible to specify empty "" command
+    //
+    //     "args": {},                  // comma-separated collection of arguments used alongside invoked command
+    //     "args": {
+    //         "commands": [
+    //             {
+    //                 "command": "...",
+    //                 "args": {},
+    //             },
+    //             {
+    //                 "command": "...",
+    //                 "args": {},
+    //             }
+    //         ]
+    //     },                           // in case of "runCommands", "args" has only one attribute "commands", which is an array of {"command": , "args": } pairs
+    //                                  // "args" of "command" can be either {key: value, ...} or [value, value, ...]
+    //                                  // it is possible to specify empty "" command
+    //
+    //     "when": "",                  // context-based boolean expression (optional)
+    //     "systemWide": [true|false],  // wether to process systemwide (when VSCodium is not focused; usually not needed)
+    // }
+
+]
