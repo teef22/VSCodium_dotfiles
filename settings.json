@@ -273,6 +273,12 @@
     // Extensions -> .NET Install Tool
     "dotnetAcquisitionExtension.enableTelemetry": false,
 
+    // Extensions -> Bookmarks
+    "bookmarks.gutterIconBorderColor": "#B615FB",
+    "bookmarks.gutterIconFillColor": "#B615FB",
+    "bookmarks.saveBookmarksInProject": true,
+    "bookmarks.sideBar.hideWelcome": true,
+
     // ...
 
     // Extensions -> Git
@@ -309,22 +315,23 @@
     "vim.foldfix": true,
     // can't quite get for now wether it works properly
     // "vim.gdefault": true,
-	"vim.handleKeys": {
-		"<C-d>": true,
-		"<C-u>": true,
-		"<C-e>": true,
-		"<C-y>": true,
-		"<C-z>": true,
-		"<C-s>": true,
-		"<C-f>": false,
-	},
+    // when true - used by vim extension, false - by vscode
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-u>": true,
+        "<C-e>": true,
+        "<C-y>": true,
+        "<C-z>": true,
+        "<C-s>": true,
+        "<C-f>": false,
+    },
     "vim.highlightedyank.color": "rgba(250, 240, 170, 0.3)",
     "vim.highlightedyank.duration": 500,
     "vim.highlightedyank.enable": true,
     "vim.hlsearch": true,
     // add TWO spaces after [. ? !] characters on join / reformat
     "vim.joinspaces": false,
-    "vim.leader": "<Space>",
+    "vim.leader": "<space>",
     // remove on odd behaviour for <:> pair
     "vim.matchpairs": "(:),{:},[:],<:>",
     // // use nvim config file for nvim backend
@@ -398,20 +405,37 @@
         },
         // bookmarking stuff
         {
-            "before": [ "<leader>", "m" ],
+            "before": [ "<leader>", "m", "m" ],
             "commands": [
                 "bookmarks.toggle"
             ]
         },
         {
-            "before": [ "<leader>", "b" ],
+            "before": [ "<leader>", "m", "j" ],
+            "commands": [
+                "bookmarks.jumpToNext"
+            ]
+        },
+        {
+            "before": [ "<leader>", "m", "k" ],
+            "commands": [
+                "bookmarks.jumpToPrevious"
+            ]
+        },
+        {
+            "before": [ "<leader>", "<S-m>" ],
             "commands": [
                 "bookmarks.list"
             ]
         },
+        // disable vim's bookmarking
+        {
+            "before": [ "m" ],
+            "after": []
+        }
     ],
     "vim.visualModeKeyBindings": [
-        // continuous intentation mode with </>
+        // continuous indentation mode with </>
         {
             "before": [ ">" ],
             "commands": [
