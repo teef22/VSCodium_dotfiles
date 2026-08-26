@@ -183,6 +183,9 @@
     "scm.repositories.visible": 0,
 
     // Features -> Extensions
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1,
+    },  // give separate process to extension
 
     // Features -> Terminal
     "terminal.explorerKind": "both",
@@ -304,10 +307,21 @@
     // uses separate nvim backend to handle VSCodeVim Ex commands (:command)
     "vim.enableNeovim": true,
     "vim.foldfix": true,
-    "vim.gdefault": true,
+    // can't quite get for now wether it works properly
+    // "vim.gdefault": true,
+	"vim.handleKeys": {
+		"<C-d>": true,
+		"<C-u>": true,
+		"<C-e>": true,
+		"<C-y>": true,
+		"<C-z>": true,
+		"<C-s>": true,
+		"<C-f>": false,
+	},
     "vim.highlightedyank.color": "rgba(250, 240, 170, 0.3)",
     "vim.highlightedyank.duration": 500,
     "vim.highlightedyank.enable": true,
+    "vim.hlsearch": true,
     // add TWO spaces after [. ? !] characters on join / reformat
     "vim.joinspaces": false,
     "vim.leader": "<Space>",
@@ -320,11 +334,11 @@
     "vim.neovimUseConfigFile": true,
     // READ THE DOCS ON PLUGIN
     // "vim.replaceWithRegister": true,
-    // // TODO: pick colors
-    // "vim.searchHighlightColor": "\"",
-    // "vim.searchHighlightTextColor": "\"",
-    // "vim.searchMatchColor": "\"",
-    // "vim.searchMatchTextColor": "\"",
+    // TODO: search colors (backgrounds are used from themes, maybe not worth changing)
+    // "vim.searchHighlightColor": "",
+    // "vim.searchHighlightTextColor": "",
+    // "vim.searchMatchColor": "",
+    // "vim.searchMatchTextColor": "",
     "vim.shell": "/usr/bin/ghostty",
     "vim.showMarksInGutter": true,
     // // built in support for relative line numbers in NORMAL mode only
@@ -343,4 +357,92 @@
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "/home/dmytro/.config/VSCodium/User/vim/.vimrc",
     "vim.visualstar": true,
+
+    // Extensions -> Vim (keybindings)
+
+    // // Vim keybinding template
+    // "vim.{...}KeyBindings{...}": [
+    //     {
+    //         "before": ["key", "key", ...],  // which
+    //         "after": ["key", "key", ...],
+    //         "commands": [
+    //             "some.command.name",
+    //             "some.command.name",
+    //             ...
+    //         ],
+    //         "silent": [true|false],
+    //     },
+    // ]
+
+    "vim.insertModeKeyBindings": [
+        // jump exit
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+    ],
+    "vim.normalModeKeyBindings": [
+        // save file
+        {
+            "before": ["leader", "w"],
+            "commands": [
+                "workbench.action.files.save",
+            ]
+        },
+        // hide search highlighting
+        {
+            "before":["<C-n>"],
+            "commands": [
+                ":nohl",
+            ]
+        },
+        // bookmarking stuff
+        {
+            "before": [ "<leader>", "m" ],
+            "commands": [
+                "bookmarks.toggle"
+            ]
+        },
+        {
+            "before": [ "<leader>", "b" ],
+            "commands": [
+                "bookmarks.list"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindings": [
+        // continuous intentation mode with </>
+        {
+            "before": [ ">" ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [ "<" ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    "vim.operatorPendingModeKeyBindings": [
+        // duplicate w/e motions on {/} keys
+        {
+            "before": ["{"],
+            "after": ["w"]
+        },
+        {
+            "before": ["}"],
+            "after": ["e"]
+        },
+        // duplicate ^/$ motions on L/H keys
+        {
+            "before": ["<S-l>"],
+            "after": ["$"]
+        },
+        {
+            "before": ["<S-h>"],
+            "after": ["^"]
+        },
+    ],
 }
