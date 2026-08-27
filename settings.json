@@ -276,6 +276,10 @@
     // Extensions -> Bookmarks
     "bookmarks.gutterIconBorderColor": "#B615FB",
     "bookmarks.gutterIconFillColor": "#B615FB",
+    "workbench.colorCustomizations": {
+        "bookmarks.overviewRuler": "#B615FB88",
+        "bookmarks.lineBackground": "#157EFB22",
+    },
     "bookmarks.saveBookmarksInProject": true,
     "bookmarks.sideBar.hideWelcome": true,
 
@@ -411,6 +415,12 @@
             ]
         },
         {
+            "before": [ "<leader>", "m", "l" ],
+            "commands": [
+                "bookmarks.toggleLabeled"
+            ]
+        },
+        {
             "before": [ "<leader>", "m", "j" ],
             "commands": [
                 "bookmarks.jumpToNext"
@@ -425,7 +435,7 @@
         {
             "before": [ "<leader>", "<S-m>" ],
             "commands": [
-                "bookmarks.list"
+                "bookmarks.listFromAllFiles"
             ]
         },
         // disable vim's bookmarking
