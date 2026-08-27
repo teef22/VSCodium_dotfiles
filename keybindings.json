@@ -3,7 +3,8 @@
 // vscodium v1.126.04524
 
 [
-    // // ### Keyboard rule
+    // // ### Keyboard Rule
+
     // {
     //     "key": "",                   // define shortcut (i.e. "ctrl+f") or chord (i.e. "ctrl+m alt+right")
     //     "command": "",               // one command to execute or "runCommands" with multiple commands specified as array "commands": [...] in "args"
@@ -59,4 +60,43 @@
         "command": "-bookmarks.toggle",
         "when": "editorTextFocus"
     },
+
+    // // ### Vim's Keyboard Rule
+
+    // To bind shortcut, not handled by vim, try template below
+    // {
+    //     "key": "YOUR_KEY_COMBINATION",
+    //     "command": "vim.remap",
+    //     "when": "inputFocus && vim.mode == 'VIM_MODE_YOU_WANT_TO_REBIND'",
+    //     "args": {
+    //         "after": [
+    //             "YOUR_VIM_ACTION"
+    //         ]
+    //     }
+    // }
+    //
+    // For example
+    // {
+    //     "key": "ctrl+shift+y",
+    //     "command": "vim.remap",
+    //     "when": "inputFocus && vim.mode == 'Normal'",
+    //     "args": {
+    //         "after": ["y", "y"]
+    //     }
+    // }
+    //
+    // Supported vim modes
+    // - Normal
+    // - Insert
+    // - Visual
+    // - VisualBlock
+    // - VisualLine
+    // - SearchInProgressMode
+    // - CommandlineInProgress
+    // - Replace
+    // - EasyMotionMode
+    // - EasyMotionInputMode
+    // - SurroundInputMode
+    // - OperatorPendingMode
+    // - Disabled
 ]
