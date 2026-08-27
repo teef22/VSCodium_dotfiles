@@ -6,15 +6,23 @@
     // -------------------------------------------------------------------------
     // ### Text Editor
     "editor.accessibilitySupport": "off",
+    // probably affects vim extension performance
     "editor.codeLens": false,
+    "editor.cursorSurroundingLines": 999,
+    "editor.cursorSurroundingLinesStyle": "all",
     "editor.lineNumbers": "relative",
+    // probably affects vim extension performance
+    "editor.occurrencesHighlight": "off",
     "editor.renderLineHighlight": "all",
     "editor.rulers": [
         80, 100, 120
     ],
     "editor.scrollBeyondLastColumn": 5,
-    "editor.selectionHighlightMultiline": true,
+    // probably affects vim extension performance
+    "editor.selectionHighlight": false,
     "editor.showFoldingControls": "always",
+    // probably affects vim extension performance
+    "editor.stickyScroll.enabled": false,
     "editor.trimWhitespaceOnDelete": true,
 
     // Text Editor -> Cursor
@@ -34,9 +42,12 @@
     // Text Editor -> Diff Editor
 
     // Text Editor -> Minimap
+    // probably affects vim extension performance
     "editor.minimap.enabled": false,
 
     // Text Editor -> Suggestions
+    // probably affects vim extension performance
+    "editor.hover.enabled": "off",
     "editor.suggest.matchOnWordStartOnly": false,
     "editor.suggest.preview": true,
     // // whether to show hints at the bottom of suggestions window
@@ -185,7 +196,7 @@
     // Features -> Extensions
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1,
-    },  // give separate process to extension
+    },  // give separate process to extension, thus speeding up extension
 
     // Features -> Terminal
     "terminal.explorerKind": "both",
