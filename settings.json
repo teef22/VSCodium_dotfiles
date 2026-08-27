@@ -350,7 +350,7 @@
     // "vim.searchHighlightTextColor": "",
     // "vim.searchMatchColor": "",
     // "vim.searchMatchTextColor": "",
-    "vim.shell": "/usr/bin/ghostty",
+    "vim.shell": "/bin/zsh",
     "vim.showMarksInGutter": true,
     // // built in support for relative line numbers in NORMAL mode only
     // "vim.smartRelativeLine": true,
