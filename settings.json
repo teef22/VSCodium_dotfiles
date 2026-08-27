@@ -369,7 +369,7 @@
     "vim.vimrc.path": "/home/dmytro/.config/VSCodium/User/vim/.vimrc",
     "vim.visualstar": true,
 
-    // Extensions -> Vim (keybindings)
+    // Extensions -> Vim (Keybindings)
 
     // // Vim keybinding template
     // "vim.{...}KeyBindings{...}": [
@@ -384,6 +384,8 @@
     //         "silent": [true|false],
     //     },
     // ]
+
+    // (Recursive)
 
     "vim.insertModeKeyBindings": [
         // jump exit
@@ -409,51 +411,51 @@
         },
         // bookmarking stuff
         {
-            "before": [ "<leader>", "m", "m" ],
+            "before": ["<leader>", "m", "m"],
             "commands": [
                 "bookmarks.toggle"
             ]
         },
         {
-            "before": [ "<leader>", "m", "l" ],
+            "before": ["<leader>", "m", "l"],
             "commands": [
                 "bookmarks.toggleLabeled"
             ]
         },
         {
-            "before": [ "<leader>", "m", "j" ],
+            "before": ["<leader>", "m", "j"],
             "commands": [
                 "bookmarks.jumpToNext"
             ]
         },
         {
-            "before": [ "<leader>", "m", "k" ],
+            "before": ["<leader>", "m", "k"],
             "commands": [
                 "bookmarks.jumpToPrevious"
             ]
         },
         {
-            "before": [ "<leader>", "<S-m>" ],
+            "before": ["<leader>", "<S-m>"],
             "commands": [
                 "bookmarks.listFromAllFiles"
             ]
         },
         // disable vim's bookmarking
         {
-            "before": [ "m" ],
+            "before": ["m"],
             "after": []
         }
     ],
     "vim.visualModeKeyBindings": [
         // continuous indentation mode with </>
         {
-            "before": [ ">" ],
+            "before": [">"],
             "commands": [
                 "editor.action.indentLines"
             ]
         },
         {
-            "before": [ "<" ],
+            "before": ["<"],
             "commands": [
                 "editor.action.outdentLines"
             ]
@@ -477,6 +479,46 @@
         {
             "before": ["<S-h>"],
             "after": ["^"]
+        },
+    ],
+
+    // (Non Recursive)
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // do not override register on "x" in normal mode
+        {
+            "before": ["x"],
+            "after": ["\"", "_", "x"]
+        },
+        {
+            "before": ["<S-x>"],
+            "after": ["\"", "_", "<S-x>"]
+        },
+        // do not override register on "s" in normal mode
+        {
+            "before": ["s"],
+            "after": ["\"", "_", "s"]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // do not override register on "p" in visual mode
+        {
+            "before": ["p"],
+            "after": ["p", "g", "v", "y"]
+        },
+        // do not override register on "x" in visual mode
+        {
+            "before": ["x"],
+            "after": ["\"", "_", "x"]
+        },
+        {
+            "before": ["<S-x>"],
+            "after": ["\"", "_", "<S-x>"]
+        },
+        // do not override register on "s" in visual mode
+        {
+            "before": ["s"],
+            "after": ["\"", "_", "s"]
         },
     ],
 }
