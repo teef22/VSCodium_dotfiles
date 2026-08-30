@@ -532,6 +532,24 @@
                 "editor.action.outdentLines"
             ]
         },
+        // bookmarking stuff
+        {
+            "before": ["<leader>", "m", "j"],
+            "commands": [
+                "bookmarks.expandSelectionToNext",
+                "extension.vim_left",
+                "extension.vim_right"
+            ],
+        },
+        {
+            "before": ["<leader>", "m", "k"],
+            "commands": [
+                "bookmarks.expandSelectionToPrevious",
+                "extension.vim_left",
+                "extension.vim_right"
+
+            ],
+        },
     ],
     "vim.operatorPendingModeKeyBindings": [
         // duplicate w/e motions on {/} keys
