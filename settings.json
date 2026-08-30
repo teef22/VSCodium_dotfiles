@@ -308,8 +308,29 @@
 
     // Extensions -> Vim
 
-    // READ THE DOCS ON PLUGIN
+    // =========================================================================
+    // QUICK DOCS PN PLUGIN 'auto switch input method'
+    // // switch to 'us' keyboard layout on return to normal mode
+    // "vim.autoSwitchInputMethod.defaultIM": "us",
+    // "vim.autoSwitchInputMethod.enable": true,
+    // "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/bin/xkb-switch",
+    // "vim.autoSwitchInputMethod.switchIMCmd": "/usr/bin/xkb-switch -s {im}",
+    // DOESN'T WORK ON CINNAMON AS DE WON'T LET YOU CHANGE LAYOUT STATE ........
+    // USING TOOLINGS SUCH AS XKB-SWITCH .......................................
+    // =========================================================================
+    // QUICK DOCS ON PLUGIN 'camel case motion'
+    // <leader>w
+    // <leader>e
+    // <leader>b
+    // <operator>i<leader>w - apply operator on camel case word segment
+    // DISABLE FOR NOW, BECAUSE PLUGIN NECESSITY IS LOWER THEN .................
+    // DESIRE TO GET USED TO <LEADER>S AS NEW FILE SAVE ........................
     // "vim.camelCaseMotion.enable": true,
+    // =========================================================================
+    // QUICK DOCS ON PLUGIN 'commentary'
+    // gc
+    // gC
+    // =========================================================================
     "vim.changeWordIncludesWhitespace": true,
     // // DO NOT set cursor styles, it breaks cursor positioning
     // "vim.cursorStylePerMode.insert": "block",
@@ -318,13 +339,18 @@
     // "vim.cursorStylePerMode.visual": "block",
     // "vim.cursorStylePerMode.visualblock": "block",
     // "vim.cursorStylePerMode.visualline": "block",
-    // READ THE DOCS ON PLUGIN
-    // "vim.easymotion": true,
+    // =========================================================================
+    // QUICK DOCS ON PLUGIN 'easymotion'
+    // <leader><leader> f/F <char>
+    // <leader><leader> s <char>
+    // <leader><leader> / <char>
+    "vim.easymotion": true,
     "vim.easymotionDimBackground": false,
     "vim.easymotionIncSearchForegroundColor": "#FF0000",
     "vim.easymotionMarkerForegroundColorOneChar": "#FF0000",
     "vim.easymotionMarkerForegroundColorTwoCharFirst": "#00AAFF",
     "vim.easymotionMarkerForegroundColorTwoCharSecond": "#00AAFF",
+    // =========================================================================
     // uses separate nvim backend to handle VSCodeVim Ex commands (:command)
     "vim.enableNeovim": true,
     "vim.foldfix": true,
@@ -344,18 +370,30 @@
     "vim.highlightedyank.duration": 500,
     "vim.highlightedyank.enable": true,
     "vim.hlsearch": true,
+    // =========================================================================
+    // QUICK DOCS ON PLUGIN 'indent-object'
+    // <operator>ii - this indentation
+    // <operator>ai - this indentation and above line (Python 'if')
+    // <operator>aI - this indentation and above/below line (C# 'if')
+    // =========================================================================
     // add TWO spaces after [. ? !] characters on join / reformat
     "vim.joinspaces": false,
     "vim.leader": "<space>",
     // remove on odd behaviour for <:> pair
     "vim.matchpairs": "(:),{:},[:],<:>",
     // // use nvim config file for nvim backend
-    // // READ DOCS for supported config options
     "vim.neovimConfigPath": "/home/dmytro/.config/VSCodium/User/nvim/init.lua",
     "vim.neovimPath": "/usr/bin/nvim",
     "vim.neovimUseConfigFile": true,
-    // READ THE DOCS ON PLUGIN
+    // =========================================================================
+    // QUICK DOCS ON PLUGIN 'replace with register'
+    // [count]"[a|b|c|...]gr<motion> - replace motion defined text with register
+    // [count]"[a|b|c|...]grr - replace line(-s) with register
+    // {visual}"[a|b|c|...]gr - replace selection with register
+    // I AM NOT USING REGISTERS, ONLY ONE MAIN CLIPBAORD, ......................
+    // SO DO NOT NEED THIS EXTENSION FOR NOW ...................................
     // "vim.replaceWithRegister": true,
+    // =========================================================================
     // TODO: search colors (backgrounds are used from themes, maybe not worth changing)
     // "vim.searchHighlightColor": "",
     // "vim.searchHighlightTextColor": "",
@@ -365,17 +403,33 @@
     "vim.showMarksInGutter": true,
     // // built in support for relative line numbers in NORMAL mode only
     // "vim.smartRelativeLine": true,
-    // READ THE DOCS ON PLUGIN and bind some other key, not the holly 's'
-    // "vim.sneak": true,
+    // =========================================================================
+    // QUICK DOCS ON PLUGIN 'sneak'
+    // s - disabled (because I like default vim's "s")
+    // f - search forward vertically
+    // F - search backward vertically
+    "vim.sneak": true,
     "vim.sneakReplacesF": true,
     "vim.sneakUseIgnorecaseAndSmartcase": true,
-    // READ THE DOCS ON PLUGIN 'Surround'
-    // "vim.surround": true,
-    // READ THE DOCS ON PLUGIN 'targets.vim'
-    // "vim.targets.enable": true,
+    // =========================================================================
+    // QUICK DOCS ON PLUGIN 'surround'
+    // y s <motion> <desired>
+    // d s <existing>
+    // c s <existing> <desired>
+    // S <desired>
+    "vim.surround": true,
+    // =========================================================================
+    // QUICK DOCS ON PLUGIN 'textobj arguments'
+    // <operator>ia - argument excluding separator
+    // <operator>aa - argument including separator
+    "vim.targets.enable": true,
+    // =========================================================================
+    // QUICK DOCS ON PLUGIN 'textobj entire'
+    // <operation>ae - entire content of a buffer
+    // <operation>ie - entire content of a buffer with no leading / trailing spaces
+    // =========================================================================
     "vim.useSystemClipboard": true,
-    // // use .vimrc file to configure VSCodeVim keybindings (unsure about general settings)
-    // // READ DOCS for supported config options
+    // // use .vimrc file to configure VSCodeVim mappings only
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "/home/dmytro/.config/VSCodium/User/vim/.vimrc",
     "vim.visualstar": true,
@@ -398,13 +452,6 @@
 
     // (Recursive)
 
-    "vim.insertModeKeyBindings": [
-        // jump exit
-        {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
-        },
-    ],
     "vim.normalModeKeyBindings": [
         // save file
         {
@@ -456,6 +503,20 @@
             "before": ["m"],
             "after": []
         }
+    ],
+    "vim.insertModeKeyBindings": [
+        // jump exit
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+        // hide search highlighting
+        {
+            "before":["<C-n>"],
+            "commands": [
+                ":nohl",
+            ]
+        },
     ],
     "vim.visualModeKeyBindings": [
         // continuous indentation mode with </>
@@ -510,6 +571,18 @@
             "before": ["s"],
             "after": ["\"", "_", "s"]
         },
+        // disable sneak's default "s" in normal mode,
+        // do not override register on "s" in normal mode
+        {
+            "before": ["s"],
+            "after": ["\"", "_", "c", "l"]
+        },
+        // disable sneak's default "S" in normal mode,
+        // do not override register on "s" in normal mode
+        {
+            "before": ["<S-s>"],
+            "after": ["\"", "_", "c", "c"]
+        },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         // do not override register on "p" in visual mode
@@ -522,14 +595,16 @@
             "before": ["x"],
             "after": ["\"", "_", "x"]
         },
+        // do not override register on "X" in visual mode
         {
             "before": ["<S-x>"],
             "after": ["\"", "_", "<S-x>"]
         },
+        // disable sneak's default "s" in visual mode,
         // do not override register on "s" in visual mode
         {
             "before": ["s"],
-            "after": ["\"", "_", "s"]
+            "after": ["\"", "_", "c"]
         },
     ],
 }
