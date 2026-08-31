@@ -453,6 +453,159 @@
     // (Recursive)
 
     "vim.normalModeKeyBindings": [
+        // =====================================================================
+        // Development keybindings
+        // 1) ==================================================================
+        // go to definition
+        {
+            "before": ["leader", "g", "d"],
+            "commands": ["editor.action.revealDefinition"]
+        },
+        // peek definition
+        {
+            "before": ["leader", "g", "p", "d"],
+            "commands": ["editor.action.peekDefinition"]
+        },
+        // go to declaration
+        {
+            "before": ["leader", "g", "D"],
+            "commands": ["editor.action.revealDeclaration"]
+        },
+        // peek declaration
+        {
+            "before": ["leader", "g", "p", "D"],
+            "commands": ["editor.action.peekDeclaration"]
+        },
+        // go to type definition
+        {
+            "before": ["leader", "g", "t"],
+            "commands": ["editor.action.goToTypeDefinition"]
+        },
+        // peek type definition
+        {
+            "before": ["leader", "g", "p", "t"],
+            "commands": ["editor.action.peekTypeDefinition"]
+        },
+        // go to implementation
+        {
+            "before": ["leader", "g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        // peek implementation
+        {
+            "before": ["leader", "g", "p", "i"],
+            "commands": ["editor.action.peekImplementation"]
+        },
+        // go to references
+        {
+            "before": ["leader", "g", "r"],
+            "commands": ["editor.action.goToReferences"]
+        },
+        // peek references
+        {
+            "before": ["leader", "g", "p", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        // hover
+        {
+            "before": ["leader", "g", "h"],
+            "commands": ["editor.action.showHover"]
+        },
+        // 2) ==================================================================
+        // go to next diagnostic
+        {
+            "before": ["]", "d"],
+            "after": [],
+            "commands": ["editor.action.marker.next"]
+        },
+        // go to next diagnostic in files
+        {
+            "before": ["]", "D"],
+            "after": [],
+            "commands": ["editor.action.marker.nextInFiles"]
+        },
+        // go to previous diagnostic
+        {
+            "before": ["[", "d"],
+            "after": [],
+            "commands": ["editor.action.marker.prev"]
+        },
+        // go to previous diagnostic in files
+        {
+            "before": ["[", "D"],
+            "after": [],
+            "commands": ["editor.action.marker.prevInFiles"]
+        },
+        // code action
+        {
+            "before": ["leader", "c", "a"],
+            "after": [],
+            "commands": ["editor.action.quickFix"]
+        },
+        // rename
+        {
+            "before": ["leader", "r"],
+            "after": [],
+            "commands": ["editor.action.rename"]
+        },
+        // 3) ==================================================================
+        // trigger suggestions
+        {
+            "before": ["<C-space>"],
+            "after": ["i"],
+            "commands": ["editor.action.triggerSuggest",]
+        },
+        // trigger suggestions
+        {
+            "before": ["<C-j>"],
+            "after": ["i"],
+            "commands": ["editor.action.triggerSuggest",]
+        },
+        // 4) ==================================================================
+        // show quick open
+        {
+            "before": ["leader", "f", "q"],
+            "after": [],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        // show commands
+        {
+            "before": ["leader", "f", "c"],
+            "after": [],
+            "commands": ["workbench.action.showCommands"]
+        },
+        // show explorer
+        {
+            "before": ["leader", "f", "e"],
+            "after": [],
+            "commands": ["workbench.view.explorer"]
+        },
+        // show grep / search
+        {
+            "before": ["leader", "f", "s"],
+            "after": [],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        // show source control
+        {
+            "before": ["leader", "f", "g"],
+            "after": [],
+            "commands": ["workbench.view.scm"]
+        },
+        // show extensions
+        {
+            "before": ["leader", "f", "x"],
+            "after": [],
+            "commands": ["workbench.view.extensions"]
+        },
+        // 5) ==================================================================
+        // go to terminal
+        {
+            "before": ["leader", "t", "t"],
+            "after": [],
+            "commands": ["workbench.action.terminal.toggleTerminal"]
+        },
+        // =====================================================================
         // save file
         {
             "before": ["leader", "w"],
@@ -505,6 +658,22 @@
         }
     ],
     "vim.insertModeKeyBindings": [
+        // =====================================================================
+        // Development keybindings
+        // 3) ==================================================================
+        // select next suggestion
+        {
+            "before": ["<C-j>"],
+            "after": [],
+            "commands": ["selectNextSuggestion"]
+        },
+        // select next suggestion
+        {
+            "before": ["<C-k>"],
+            "after": [],
+            "commands": ["selectPrevSuggestion"]
+        },
+        // =====================================================================
         // jump exit
         {
             "before": ["j", "j"],
