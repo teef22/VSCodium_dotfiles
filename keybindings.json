@@ -30,6 +30,12 @@
     //     "systemWide": [true|false],  // wether to process systemwide (when VSCodium is not focused; usually not needed)
     // }
 
+    // General
+    {
+        "key": "ctrl+shift+f5 ctrl+shift+f5",
+        "command": "workbench.action.reloadWindow",
+        "when": ""
+    },
     // VSCodeVim centric
     {
         "key": "escape",
