@@ -196,7 +196,7 @@
     // Features -> Extensions
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1,
-    },  // give separate process to extension, thus speeding up extension
+    },  // give separate process to extension, thus speeding it up
 
     // Features -> Terminal
     "terminal.explorerKind": "both",
@@ -515,37 +515,31 @@
         // go to next diagnostic
         {
             "before": ["]", "d"],
-            "after": [],
             "commands": ["editor.action.marker.next"]
         },
         // go to next diagnostic in files
         {
             "before": ["]", "D"],
-            "after": [],
             "commands": ["editor.action.marker.nextInFiles"]
         },
         // go to previous diagnostic
         {
             "before": ["[", "d"],
-            "after": [],
             "commands": ["editor.action.marker.prev"]
         },
         // go to previous diagnostic in files
         {
             "before": ["[", "D"],
-            "after": [],
             "commands": ["editor.action.marker.prevInFiles"]
         },
         // code action
         {
             "before": ["leader", "c", "a"],
-            "after": [],
             "commands": ["editor.action.quickFix"]
         },
         // rename
         {
             "before": ["leader", "r"],
-            "after": [],
             "commands": ["editor.action.rename"]
         },
         // 3) ==================================================================
@@ -553,72 +547,61 @@
         {
             "before": ["<C-space>"],
             "after": ["i"],
-            "commands": ["editor.action.triggerSuggest",]
+            "commands": ["editor.action.triggerSuggest"]
         },
         // trigger suggestions
         {
             "before": ["<C-j>"],
             "after": ["i"],
-            "commands": ["editor.action.triggerSuggest",]
+            "commands": ["editor.action.triggerSuggest"]
         },
         // 4) ==================================================================
         // show quick open
         {
             "before": ["leader", "f", "q"],
-            "after": [],
             "commands": ["workbench.action.quickOpen"]
         },
         // show commands
         {
             "before": ["leader", "f", "c"],
-            "after": [],
             "commands": ["workbench.action.showCommands"]
         },
         // show explorer
         {
             "before": ["leader", "f", "e"],
-            "after": [],
             "commands": ["workbench.view.explorer"]
         },
         // show grep / search
         {
             "before": ["leader", "f", "s"],
-            "after": [],
             "commands": ["workbench.action.findInFiles"]
         },
         // show source control
         {
             "before": ["leader", "f", "g"],
-            "after": [],
             "commands": ["workbench.view.scm"]
         },
         // show extensions
         {
             "before": ["leader", "f", "x"],
-            "after": [],
             "commands": ["workbench.view.extensions"]
         },
         // 5) ==================================================================
         // go to terminal
         {
             "before": ["leader", "t", "t"],
-            "after": [],
             "commands": ["workbench.action.terminal.toggleTerminal"]
         },
         // =====================================================================
         // save file
         {
             "before": ["leader", "w"],
-            "commands": [
-                "workbench.action.files.save",
-            ]
+            "commands": ["workbench.action.files.save"]
         },
         // hide search highlighting
         {
             "before":["<C-n>"],
-            "commands": [
-                ":nohl",
-            ]
+            "commands": [":nohl"]
         },
         // bookmarking stuff
         {
@@ -664,13 +647,11 @@
         // select next suggestion
         {
             "before": ["<C-j>"],
-            "after": [],
             "commands": ["selectNextSuggestion"]
         },
         // select next suggestion
         {
             "before": ["<C-k>"],
-            "after": [],
             "commands": ["selectPrevSuggestion"]
         },
         // =====================================================================
@@ -682,9 +663,7 @@
         // hide search highlighting
         {
             "before":["<C-n>"],
-            "commands": [
-                ":nohl",
-            ]
+            "commands": [":nohl"]
         },
     ],
     "vim.visualModeKeyBindings": [
@@ -708,7 +687,7 @@
                 "bookmarks.expandSelectionToNext",
                 "extension.vim_left",
                 "extension.vim_right"
-            ],
+            ]
         },
         {
             "before": ["<leader>", "m", "k"],
@@ -717,7 +696,7 @@
                 "extension.vim_left",
                 "extension.vim_right"
 
-            ],
+            ]
         },
     ],
     "vim.operatorPendingModeKeyBindings": [
