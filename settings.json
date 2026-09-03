@@ -451,6 +451,19 @@
         // - string notation
         // - object notation
         // version can be specified too
+
+        "vsx:jeanp413.open-remote-ssh",
+        "vsx:nonoroazoro.syncing",
+        "vsx:zokugun.cron-tasks",
+        "vsx:zokugun.vsix-manager",
+
+        "ms:alefragnani.Bookmarks",
+        "ms:miguelsolorio.fluent-icons",
+        "ms:mvllow.rose-pine",
+        "ms:rpbritton.zenbones",
+        "ms:teabyii.ayu",
+        "ms:vscodevim.vim",
+
     ],
     // manage extensions by sets
     "vsix.groups": {
