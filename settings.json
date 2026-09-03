@@ -306,6 +306,11 @@
 
     // ...
 
+    // Extensions -> Remote - SSH
+    // TODO: configure on future demand ...
+
+    // ...
+
     // Extensions -> Vim
 
     // =========================================================================
@@ -434,12 +439,45 @@
     "vim.vimrc.path": "/home/dmytro/.config/VSCodium/User/vim/.vimrc",
     "vim.visualstar": true,
 
+    // Extensions -> VSIX Manager
+    "vsix.debug": true,
+    "vsix.crons": {
+        // at 12PM, every day
+        "update": "0 12 * * *"
+    },
+    // define extensions to be installed
+    "vsix.extensions": [
+        // allows:
+        // - string notation
+        // - object notation
+        // version can be specified too
+    ],
+    // manage extensions by sets
+    "vsix.groups": {
+        // "group": [
+        //     "extension",
+        //     "extension",
+        //     "...",
+        // ]
+    },
+    // defined sources to allow installing extensions from
+    "vsix.sources": {
+        "vsx": {
+            "type": "marketplace",
+            "serviceUrl": "https://open-vsx.org/vscode/gallery"
+        },
+        "ms": {
+            "type": "marketplace",
+            "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery"
+        }
+    },
+
     // Extensions -> Vim (Keybindings)
 
     // // Vim keybinding template
     // "vim.{...}KeyBindings{...}": [
     //     {
-    //         "before": ["key", "key", ...],  // which
+    //         "before": ["key", "key", ...],
     //         "after": ["key", "key", ...],
     //         "commands": [
     //             "some.command.name",
