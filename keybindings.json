@@ -200,10 +200,6 @@
         "command": "-workbench.action.quickOpen"
     },
     {
-        "key": "ctrl+shift+p",
-        "command": "-workbench.action.showCommands"
-    },
-    {
         "key": "ctrl+j",
         "command": "-workbench.action.togglePanel"
     }
