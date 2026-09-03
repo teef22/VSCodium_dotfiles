@@ -1,8 +1,6 @@
 alefragnani.bookmarks
 jeanp413.open-remote-ssh
 miguelsolorio.fluent-icons
-ms-dotnettools.vscode-dotnet-runtime
-muhammad-sammy.csharp
 mvllow.rose-pine
 nonoroazoro.syncing
 rpbritton.zenbones
