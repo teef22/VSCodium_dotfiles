@@ -1,20 +1,25 @@
-## Setup guide
+# Setup guide
 
-### VSCodium
+## VSCodium
 Put this repo to `~/.config/VSCodium/User/`.
 
-To install extensions from `extensions.txt` run:
+### Extensions
+Extensions are managed via [VSIX Manager](https://github.com/zokugun/vscode-vsix-manager). Any changes to entries should be written to `vsix.extensions` array in a `settings.json` file, then `VSIX Manager: Synchronize extensions` command should be run in VSCodium.
+
+Alternative way to fast saving / installing the list of used extensions is by using shell snippets below:
+- for saving the extension list to `extensions.txt`:
+```zsh
+codium --list-extensions > extensions.txt
+```
+
+- for installing extensions from the list in `extensions.txt`:
 ```zsh
 while read extension; do
     codium --install-extension "$extension"
 done < extensions.txt
 ```
-After adding / removing new extension, you can save updated list by running:
-```zsh
-codium --list-extensions > extensions.txt
-```
 
-### VSCode notes
+## VSCode notes
 1. Clone destination become ```~/.config/Code/User/```.
 2. Consider changing paths in the `.../User/settings.json` and probably other files.
 3. Also make sure to use ```code``` executable instead of ```codium``` when using shell snippets above.
