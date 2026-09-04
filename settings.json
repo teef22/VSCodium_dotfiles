@@ -452,18 +452,11 @@
         // - object notation
         // version can be specified too
 
-        "vsx:jeanp413.open-remote-ssh",
-        "vsx:nonoroazoro.syncing",
-        "vsx:zokugun.cron-tasks",
-        "vsx:zokugun.vsix-manager",
-
-        "ms:alefragnani.Bookmarks",
-        "ms:miguelsolorio.fluent-icons",
-        "ms:mvllow.rose-pine",
-        "ms:rpbritton.zenbones",
-        "ms:teabyii.ayu",
-        "ms:vscodevim.vim",
-
+        "editor-appearance",
+        "editor-enhancement",
+        "remote-development",
+        "settings-syncing",
+        "unity-development",
     ],
     // manage extensions by sets
     "vsix.groups": {
@@ -472,6 +465,28 @@
         //     "extension",
         //     "...",
         // ]
+
+        "editor-appearance": [
+            "ms:miguelsolorio.fluent-icons",
+            "ms:mvllow.rose-pine",
+            "ms:rpbritton.zenbones",
+            "ms:teabyii.ayu",
+        ],
+        "editor-enhancement": [
+            "vsx:zokugun.vsix-manager",
+            "vsx:zokugun.cron-tasks",
+            "ms:alefragnani.Bookmarks",
+            "ms:vscodevim.vim",
+        ],
+        "remote-development": [
+            "vsx:jeanp413.open-remote-ssh",
+        ],
+        "settings-syncing": [
+            "vsx:nonoroazoro.syncing",
+        ],
+        "unity-development": [
+
+        ],
     },
     // defined sources to allow installing extensions from
     "vsix.sources": {
