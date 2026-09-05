@@ -296,6 +296,11 @@
 
     // ...
 
+    // Extensions -> DotRush
+    //
+
+    // ...
+
     // Extensions -> Git
     "git.blame.statusBarItem.enabled": false,
     "git.terminalGitEditor": true,
@@ -457,6 +462,7 @@
         "remote-development",
         "settings-syncing",
         "unity-development",
+        // "dotnet-development",
     ],
     // manage extensions by sets
     "vsix.groups": {
@@ -466,6 +472,13 @@
         //     "...",
         // ]
 
+        // "dotnet-development": [
+        //     // most popular extension with basic c# support (READ DOCS on setup)
+        //     "vsx:muhammad-sammy.csharp",
+        //     // OR
+        //     // promising extension featuring full c# support (READ DOCS on setup)
+        //     "vsx:jakubkozera/csharp-dev-tools",
+        // ],
         "editor-appearance": [
             "ms:miguelsolorio.fluent-icons",
             "ms:mvllow.rose-pine",
@@ -485,7 +498,10 @@
             "vsx:nonoroazoro.syncing",
         ],
         "unity-development": [
-
+            "vsx:nromanov.dotrush",
+            // 1. make sure dotrush extension is installed
+            // 2. add package to unity project - https://github.com/billythekidz/UnityAntigravityIDE.git
+            "vsx:antigravity-unity.antigravity-unity",
         ],
     },
     // defined sources to allow installing extensions from
@@ -615,7 +631,6 @@
             "after": ["i"],
             "commands": ["editor.action.triggerSuggest"]
         },
-        // trigger suggestions
         {
             "before": ["<C-j>"],
             "after": ["i"],
@@ -715,7 +730,7 @@
             "before": ["<C-j>"],
             "commands": ["selectNextSuggestion"]
         },
-        // select next suggestion
+        // select previous suggestion
         {
             "before": ["<C-k>"],
             "commands": ["selectPrevSuggestion"]
