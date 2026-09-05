@@ -1,8 +1,10 @@
 alefragnani.bookmarks
+antigravity-unity.antigravity-unity
 jeanp413.open-remote-ssh
 miguelsolorio.fluent-icons
 mvllow.rose-pine
 nonoroazoro.syncing
+nromanov.dotrush
 rpbritton.zenbones
 teabyii.ayu
 vscodevim.vim
