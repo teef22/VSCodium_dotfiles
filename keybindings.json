@@ -222,6 +222,10 @@
         "command": "-workbench.action.openSettings"
     },
     {
+        "key": "ctrl+k ctrl+s",
+        "command": "-workbench.action.openGlobalKeybindings"
+    },
+    {
         "key": "ctrl+e",
         "command": "-workbench.action.quickOpen"
     },
