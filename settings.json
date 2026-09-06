@@ -503,6 +503,8 @@
         ],
         "unity-development": [
             "vsx:nromanov.dotrush",
+            // // interesting tiny tool for unity development
+            // "vsx:november.clover-unity",
             "ms:kleber-swf.unity-code-snippets",
         ],
     },
