@@ -52,7 +52,7 @@ Below are list of steps to perform before starting development:
 DotRush extension provides Unity debugger functionality through [integrated Mono Debugger](https://github.com/JaneySprings/DotRush/tree/main#debugging-unity-projects). Works out of the box.
 
 Quick reminders on Unity debugging:
-1. Make sure the opened folder in VSCodium is the root one of your Unity project (contains Assets/ directory and others).
+1. Make sure the opened folder in VSCodium is the root one of your Unity project (contains `Assets/` directory and others).
 2. Don't forget to create `launch.json` file using functionality of Debug sidebar (create `launch.json` file).
 3. Ensure Unity Editor is in Play Mode.
 
