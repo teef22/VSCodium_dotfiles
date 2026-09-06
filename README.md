@@ -38,23 +38,18 @@ Make sure you have your `dotnet-sdk` package of optimal supported version (LTS o
 #### Setting up Unity development environment with VSCodium
 
 Because of the licensing terms, default VSCode extensions for development on C# / Unity can't be used anymore. But there are ways to continue development with telemetry-free VSCodium. My extensions of choice are these:
-- full C# support through [DotRush](https://github.com/JaneySprings/DotRush/tree/main);
-- complete integration with Unity with [Antigravity Unity](https://github.com/billythekidz/UnityAntigravityIDE).
+- full C# support, including Unity debugger, through [DotRush](https://github.com/JaneySprings/DotRush/tree/main);
+- useful Unity code snippets with [Unity Code Snippets](https://marketplace.visualstudio.com/items?itemName=kleber-swf.unity-code-snippets) extension.
 
 Below are list of steps to perform before starting development:
 1. Install DotRush extension (already defined in VSIX Manager).
-2. Install Antigravity Unity extension (already defined in VSIX Manager).
-3. For <b>each</b> Unity project add next package form git (`Window -> Package Manager -> |+| -> Install package from git URL...`):
-```zsh
-https://github.com/billythekidz/UnityAntigravityIDE.git
-```
-4. Make sure VSCodium is set as your [default script editor](#set-vscodium-as-default-editor).
-5. In case code suggestions, go-to actions and others don't work in VSCodium:
-   1. Check your project files for [consistency](https://github.com/teef22/VSCodium_dotfiles/edit/main/README.md#regenerate-project-files-sln--csproj--etc).
-   2. See Unity Antigravity's [troubleshooting section](https://github.com/billythekidz/UnityAntigravityIDE#intellisense-not-working--no-autocomplete-or-suggestions).
+2. Install Unity Code Snippets extension (already defined in VSIX Manager).
+3. Make sure VSCodium is set as your [default script editor](#set-vscodium-as-default-editor).
+4. In case code suggestions, go-to actions and similar functions don't work in VSCodium, it may help to check your project files for [consistency](https://github.com/teef22/VSCodium_dotfiles/edit/main/README.md#regenerate-project-files-sln--csproj--etc).
 
-#### Setting up Unity Debugger
-TODO: ...
+#### Unity debugger
+
+DotRush extension provides Unity debugger functionality through [integrated Mono Debugger](https://github.com/JaneySprings/DotRush/tree/main#debugging-unity-projects). Works out of the box.
 
 ## VSCode notes
 1. Clone destination become ```~/.config/Code/User/```.
