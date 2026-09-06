@@ -542,54 +542,29 @@
         // =====================================================================
         // Development keybindings
         // 1) ==================================================================
-        // go to definition
-        {
-            "before": ["leader", "g", "d"],
-            "commands": ["editor.action.revealDefinition"]
-        },
         // peek definition
         {
-            "before": ["leader", "g", "p", "d"],
+            "before": ["leader", "g", "d"],
             "commands": ["editor.action.peekDefinition"]
-        },
-        // go to declaration
-        {
-            "before": ["leader", "g", "D"],
-            "commands": ["editor.action.revealDeclaration"]
         },
         // peek declaration
         {
-            "before": ["leader", "g", "p", "D"],
+            "before": ["leader", "g", "D"],
             "commands": ["editor.action.peekDeclaration"]
-        },
-        // go to type definition
-        {
-            "before": ["leader", "g", "t"],
-            "commands": ["editor.action.goToTypeDefinition"]
         },
         // peek type definition
         {
-            "before": ["leader", "g", "p", "t"],
+            "before": ["leader", "g", "t"],
             "commands": ["editor.action.peekTypeDefinition"]
-        },
-        // go to implementation
-        {
-            "before": ["leader", "g", "i"],
-            "commands": ["editor.action.goToImplementation"]
         },
         // peek implementation
         {
-            "before": ["leader", "g", "p", "i"],
+            "before": ["leader", "g", "i"],
             "commands": ["editor.action.peekImplementation"]
-        },
-        // go to references
-        {
-            "before": ["leader", "g", "r"],
-            "commands": ["editor.action.goToReferences"]
         },
         // peek references
         {
-            "before": ["leader", "g", "p", "r"],
+            "before": ["leader", "g", "r"],
             "commands": ["editor.action.referenceSearch.trigger"]
         },
         // hover
