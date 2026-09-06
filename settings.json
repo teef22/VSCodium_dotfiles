@@ -499,9 +499,7 @@
         ],
         "unity-development": [
             "vsx:nromanov.dotrush",
-            // 1. make sure dotrush extension is installed
-            // 2. add package to unity project - https://github.com/billythekidz/UnityAntigravityIDE.git
-            "vsx:antigravity-unity.antigravity-unity",
+            "ms:kleber-swf.unity-code-snippets",
         ],
     },
     // defined sources to allow installing extensions from
