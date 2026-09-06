@@ -36,6 +36,11 @@
         "command": "workbench.action.reloadWindow",
         "when": ""
     },
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.view.extension.test",
+        "when": "viewContainer.workbench.view.extension.test.enabled"
+    },
     // VSCodeVim centric
     {
         "key": "escape",
@@ -51,6 +56,16 @@
         "key": "escape",
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.debug'"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.test'"
     },
     {
         "key": "escape",
