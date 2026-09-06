@@ -56,6 +56,12 @@ Quick reminders on Unity debugging:
 2. Don't forget to create `launch.json` file using functionality of Debug sidebar (create `launch.json` file).
 3. Ensure Unity Editor is in Play Mode.
 
+### .NET development
+
+Besides [DotRush](https://github.com/JaneySprings/DotRush/tree/main) extension, there are a few worth checking for general .NET development:
+1. [C#](https://github.com/muhammadsammy/free-vscode-csharp) - popular extension on Open VSIX with solid C# support.
+2. [C# Dev Tools](https://github.com/jakubkozera/vsc-csharp-dev-tools) - promising extension featuring full C# support.
+
 ## VSCode notes
 1. Clone destination become ```~/.config/Code/User/```.
 2. Consider changing paths in the `.../User/settings.json` and probably other files.
