@@ -316,6 +316,10 @@
 
     // ...
 
+    // Extensions -> Unity Code Snippets
+    "unity-code-snippets.style": "allman",
+    "unity-code-snippets.autoComplete.experimentalAttributes": true,
+
     // Extensions -> Vim
 
     // =========================================================================
