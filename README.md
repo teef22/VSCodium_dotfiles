@@ -63,6 +63,6 @@ Besides [DotRush](https://github.com/JaneySprings/DotRush/tree/main) extension, 
 2. [C# Dev Tools](https://github.com/jakubkozera/vsc-csharp-dev-tools) - promising extension featuring full C# support.
 
 ## VSCode notes
-1. Clone destination become ```~/.config/Code/User/```.
+1. Clone destination becomes ```~/.config/Code/User/```.
 2. Consider changing paths in the `.../User/settings.json` and probably other files.
 3. To develop with Unity, packages like [.NET Install Tool](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscode-dotnet-runtime), [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp), [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit), [Unity](https://marketplace.visualstudio.com/items?itemName=VisualStudioToolsForUnity.vstuc) are more than enough to begin.
