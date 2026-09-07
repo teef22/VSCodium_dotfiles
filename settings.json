@@ -185,7 +185,12 @@
             {
                 "name": "Default Unity Debugger",
                 "type": "unity",
-                "request": "attach"
+                "request": "attach",
+                "presentation": {
+                    "hidden": false,
+                    "group": "unity",
+                    "order": 1
+                }
             }
         ],
     },
