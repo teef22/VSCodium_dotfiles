@@ -179,6 +179,16 @@
     // Features -> Debug
     "debug.breakpointsView.presentation": "tree",
     "debug.showVariableTypes": true,
+    "launch":{
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Default Unity Debugger",
+                "type": "unity",
+                "request": "attach"
+            }
+        ],
+    },
 
     // Features -> Testing
     "testing.saveBeforeTest": false,
