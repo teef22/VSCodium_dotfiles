@@ -27,10 +27,14 @@ The easy way to open your project in VSCodium from Unity is by `Assets -> Open C
 
 #### Regenerate project files (.sln / .csproj / etc.)
 
-In case you got project files corrupted somehow or you didn't get them after cloning Unity project repo, try one of these to triger regeneration of those files:
-- create new file in your Unity Editor to trigger domain reload;
-- delete newly created file in your Unity Editor to trigger domain reload;
-- save existing file with changes (like adding comment, etc.).
+Sometimes you got you project files corrupted somehow or you don't get them after cloning Unity project repo. To fix that follow next steps:
+1. Make sure you have [Antigravity Unity](https://github.com/billythekidz/UnityAntigravityIDE) plugin installed for you Unity project. Go to `Window -> Package Manager -> |+| -> Install package from git URL ...` and [install it](https://github.com/billythekidz/UnityAntigravityIDE#unity-package-required).
+2. Trigger domain reload by doing one of those:
+    - create new file in your Unity Editor;
+    - delete file in your Unity Editor;
+    - save existing file with changes (like adding comment, etc.).
+
+For some unknown for me reason, when Antigravity Unity plugin is present in your project, Unity regenerates your files into proper format (e.g. `*.slnx` file got replaced with `*.sln` and `*.csproj` files). Also, you probably won't need Antigravity Unity plugin anymore for future development, but you may keep it in you project just in case.
 
 #### `dotnet-sdk` package
 
