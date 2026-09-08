@@ -9,7 +9,7 @@ Extensions are managed via [VSIX Manager](https://github.com/zokugun/vscode-vsix
 #### First time setup
 When clean-installing VSCodium on your system:
 1. Install [VSIX Manager](https://open-vsx.org/extension/zokugun/vsix-manager) extension from default marketplace of VSCodium ([Open VSIX Registry](https://open-vsx.org)).
-    1. (for ArchLinux-based distros) Install [vscodium-bin-marketplace](https://aur.archlinux.org/packages/vscodium-bin-marketplace) package from AUR, which allows access to [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode) from VSCodium. Though VSIX Manager allows equal access to all extensions from any defined marketplaces, repos, etc., MS Marketplace on VSCodium works more reliable than its web service.
+    - (for ArchLinux-based distros) Install [vscodium-bin-marketplace](https://aur.archlinux.org/packages/vscodium-bin-marketplace) package from AUR, which allows access to [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode) from VSCodium. Though VSIX Manager allows equal access to all extensions from any defined marketplaces, repos, etc., MS Marketplace on VSCodium works more reliable than its web service.
 2. Check wether all needed extensions are defined in `vsix.extensions` array in `settings.json` file.
 3. Run `VSIX Manager: Synchronize extensions` command in VSCodium to sync your extensions.
 
@@ -54,8 +54,9 @@ Because of the licensing terms, default VSCode extensions for development on C# 
 Below are list of steps to perform before starting development:
 1. Install DotRush extension (already defined in VSIX Manager).
 2. Install Unity Code Snippets extension (already defined in VSIX Manager).
-3. Make sure VSCodium is set as your [default script editor](#set-vscodium-as-default-editor).
-4. In case code suggestions, go-to actions and similar functions don't work in VSCodium, it may help to check your project files for [consistency](https://github.com/teef22/VSCodium_dotfiles/edit/main/README.md#regenerate-project-files).
+3. Make sure VSCodium is set as your [default script editor](https://github.com/teef22/VSCodium_dotfiles/edit/main/README.md#set-vscodium-as-default-editor).
+4. Check your project files for [consistency](https://github.com/teef22/VSCodium_dotfiles/edit/main/README.md#regenerate-project-files).
+5. Inside VSCodium run command `DotRush: Pick Project or Solution files` and choose project `*.sln` (or `*.slnx`) file.
 
 #### Unity debugger
 
