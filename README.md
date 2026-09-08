@@ -17,24 +17,29 @@ When clean-installing VSCodium on your system:
 
 Here are a few tips for Unity development with VSCodium.
 
-#### Set VSCodium as default editor
+#### Set default editor
 
-Do not forget to set VSCodium as your editor of choice. To do this, in Unity Editor go to `Edit -> Preferences -> External Tools` and choose `External Script Editor` either in dropdown menu, or manually using explorer. Also set `External Script Editor Args` to `$(File)`.
+Do not set VSCodium as your default editor directly, otherwise you lose Unity Editor's ability to [regenerate project files](https://github.com/teef22/VSCodium_dotfiles/edit/main/README.md#regenerate-project-files). On the contrary, create symlink named `code` to your VSCodium executable by running this in your terminal:
+```zsh
+sudo ln -s $(which codium) /usr/local/bin/code
+```
+Then choose `/usr/local/bin/code` as your editor of choice in the `Preferences -> External tools -> External Script Editor`.
 
 #### Open C# project in VSCodium
 
 The easy way to open your project in VSCodium from Unity is by `Assets -> Open C# Project`.
 
-#### Regenerate project files (.sln / .csproj / etc.)
+#### Regenerate project files
 
-Sometimes you got you project files corrupted somehow or you don't get them after cloning Unity project repo. To fix that follow next steps:
-1. Make sure you have [Antigravity Unity](https://github.com/billythekidz/UnityAntigravityIDE) plugin installed for you Unity project. Go to `Window -> Package Manager -> |+| -> Install package from git URL ...` and [install it](https://github.com/billythekidz/UnityAntigravityIDE#unity-package-required).
-2. Trigger domain reload by doing one of those:
-    - create new file in your Unity Editor;
-    - delete file in your Unity Editor;
-    - save existing file with changes (like adding comment, etc.).
-
-For some unknown for me reason, when Antigravity Unity plugin is present in your project, Unity regenerates your files into proper format (e.g. `*.slnx` file got replaced with `*.sln` and `*.csproj` files). Also, you probably won't need Antigravity Unity plugin anymore for future development, but you may keep it in you project just in case.
+Sometimes you got your project files corrupted somehow or you don't get them after cloning Unity project repo. To fix that follow these steps:
+1. Using your terminal create symlink named `code` to your VSCodium executable (`codium`) by running this:
+    ```zsh
+    sudo ln -s $(which codium) /usr/local/bin/code
+    ```
+    Do this to [trick](https://discussions.unity.com/t/missing-generate-all-csproj-files-in-unity-2020-3/247892/7) Unity Editor into thinking you are using an officially [supported distribution](https://docs.unity3d.com/Manual/preferences-external-tools.html#:~:text=Unity%20has%20built%2Din%20support%20for%20Visual%20Studio%20Community%2C%20Visual%20Studio%20Code%20%28VSCode%29%20and%20JetBrains%20Rider%2E) of VSCode.
+2. Inside Unity Editor go to `Preferences -> External tools`. For `External Script Editor` choose your newly created symlink `/usr/local/bin/code` using internal explorer. Section `Generate .csproj files` should appear now.
+3. Ensure you have checked `Embedded packages` and `Local packages` inside section `Generate .csproj files`.
+4. Press `Regenerate project files` button.
 
 #### `dotnet-sdk` package
 
@@ -50,7 +55,7 @@ Below are list of steps to perform before starting development:
 1. Install DotRush extension (already defined in VSIX Manager).
 2. Install Unity Code Snippets extension (already defined in VSIX Manager).
 3. Make sure VSCodium is set as your [default script editor](#set-vscodium-as-default-editor).
-4. In case code suggestions, go-to actions and similar functions don't work in VSCodium, it may help to check your project files for [consistency](https://github.com/teef22/VSCodium_dotfiles/edit/main/README.md#regenerate-project-files-sln--csproj--etc).
+4. In case code suggestions, go-to actions and similar functions don't work in VSCodium, it may help to check your project files for [consistency](https://github.com/teef22/VSCodium_dotfiles/edit/main/README.md#regenerate-project-files).
 
 #### Unity debugger
 
