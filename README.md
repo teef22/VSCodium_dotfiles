@@ -54,7 +54,7 @@ Because of the licensing terms, default VSCode extensions for development on C# 
 Below are list of steps to perform before starting development:
 1. Install DotRush extension (already defined in VSIX Manager).
 2. Install Unity Code Snippets extension (already defined in VSIX Manager).
-3. Make sure VSCodium is set as your [default script editor](https://github.com/teef22/VSCodium_dotfiles#set-vscodium-as-default-editor).
+3. Make sure VSCodium is set as your [default script editor](https://github.com/teef22/VSCodium_dotfiles#set-default-editor).
 4. Check your project files for [consistency](https://github.com/teef22/VSCodium_dotfiles#regenerate-project-files).
 5. Inside VSCodium run command `DotRush: Pick Project or Solution files` and choose project `*.sln` (or `*.slnx`) file.
 
