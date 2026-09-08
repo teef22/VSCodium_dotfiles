@@ -49,7 +49,7 @@ Make sure you have your `dotnet-sdk` package of optimal supported version (LTS o
 
 Because of the licensing terms, default VSCode extensions for development on C# / Unity can't be used anymore. But there are ways to continue development with telemetry-free VSCodium. My extensions of choice are these:
 - full C# support, including Unity debugger, through [DotRush](https://github.com/JaneySprings/DotRush);
-- useful Unity code snippets with [Unity Code Snippets](https://marketplace.visualstudio.com/items?itemName=kleber-swf.unity-code-snippets) extension.
+- useful Unity code snippets with [Unity Code Snippets](https://github.com/kleber-swf/vscode-unity-code-snippets) extension.
 
 Below are list of steps to perform before starting development:
 1. Install DotRush extension (already defined in VSIX Manager).
