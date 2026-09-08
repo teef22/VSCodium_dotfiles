@@ -28,7 +28,8 @@ The easy way to open your project in VSCodium from Unity is by `Assets -> Open C
 #### Regenerate project files (.sln / .csproj / etc.)
 
 In case you got project files corrupted somehow or you didn't get them after cloning Unity project repo, try one of these to triger regeneration of those files:
-- create new file in your Unity Editor / VSCodium and switch between them to trigger domain reload;
+- create new file in your Unity Editor to trigger domain reload;
+- delete newly created file in your Unity Editor to trigger domain reload;
 - save existing file with changes (like adding comment, etc.).
 
 #### `dotnet-sdk` package
