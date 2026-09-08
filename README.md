@@ -64,7 +64,7 @@ DotRush extension provides Unity debugger functionality through [integrated Mono
 
 Quick reminders on Unity debugging:
 1. Make sure the opened folder in VSCodium is the root one of your Unity project (contains `Assets/` directory and others).
-2. Don't forget to create [`launch.json`](https://code.visualstudio.com/docs/debugtest/debugging-configuration) file (e.g. by using functionality of Debug sidebar `create launch.json file`).
+2. Create [`launch.json`](https://code.visualstudio.com/docs/debugtest/debugging-configuration) file (e.g. by using functionality of Debug sidebar `create launch.json file`) if you are not satisfied with defaul Unity debugger configuration [provided](https://github.com/teef22/VSCodium_dotfiles/blob/eddd22ca275de3afc13c07b1dc246c0748beb928/settings.json#L182-L196) in `settings.json`.
 3. Ensure Unity Editor is in Play Mode.
 
 ### .NET development
