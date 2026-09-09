@@ -37,6 +37,16 @@
         "command": "workbench.view.extension.test",
         "when": "viewContainer.workbench.view.extension.test.enabled"
     },
+    {
+        "key": "ctrl+alt+n",
+        "command": "notifications.hideToasts",
+        "when": ""
+    },
+    {
+        "key": "ctrl+shift+alt+n",
+        "command": "notifications.clearAll",
+        "when": ""
+    },
     // VSCodeVim centric
     {
         "key": "escape",
