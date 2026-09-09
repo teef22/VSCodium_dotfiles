@@ -73,6 +73,8 @@ Besides [DotRush](https://github.com/JaneySprings/DotRush/tree/main) extension, 
 1. [C#](https://github.com/muhammadsammy/free-vscode-csharp) - popular extension on Open VSIX with solid C# support.
 2. [C# Dev Tools](https://github.com/jakubkozera/vsc-csharp-dev-tools) - promising extension featuring full C# support.
 
+In case you need to setup some [custom tasks](https://code.visualstudio.com/docs/debugtest/tasks#_custom-tasks) to run for you project, create file in `.vscode` directory named `tasks.json` and define them there as you like.
+
 ## VSCode notes
 1. Clone destination becomes ```~/.config/Code/User/```.
 2. Consider changing paths in the `.../User/settings.json` and probably other files.
