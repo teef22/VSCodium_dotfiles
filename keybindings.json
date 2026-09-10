@@ -47,6 +47,11 @@
         "command": "notifications.clearAll",
         "when": ""
     },
+    {
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.output.toggleOutput",
+        "when": "workbench.panel.output.active"
+    },
     // VSCodeVim centric
     {
         "key": "escape",
@@ -102,6 +107,21 @@
         "key": "ctrl+k",
         "command": "selectPrevCodeAction",
         "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "panelFocus && activePanel == 'workbench.panel.markers'"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "panelFocus && activePanel == 'workbench.panel.output'"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "panelFocus && activePanel == 'workbench.panel.repl'"
     },
     // Removed bindings
     {
@@ -210,6 +230,10 @@
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
     },
     {
+        "key": "ctrl+shift+t",
+        "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
         "key": "ctrl+down",
         "command": "-selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
@@ -262,6 +286,16 @@
         "key": "ctrl+up",
         "command": "-selectPrevCodeAction",
         "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "-workbench.action.gotoSymbol",
+        "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
+    },
+    {
+        "key": "ctrl+k ctrl+h",
+        "command": "-workbench.action.output.toggleOutput",
+        "when": "workbench.panel.output.active"
     },
 
     // // ### Vim's Keyboard Rule

@@ -668,6 +668,21 @@
             "commands": ["workbench.view.extensions"]
         },
         // 5) ==================================================================
+        // show problems
+        {
+            "before": ["leader", "f", "m"],
+            "commands": ["workbench.action.problems.focus"]
+        },
+        // show output
+        {
+            "before": ["leader", "f", "o"],
+            "commands": ["workbench.panel.output.focus"]
+        },
+        // show debug console
+        {
+            "before": ["leader", "f", "y"],
+            "commands": ["workbench.debug.action.focusRepl"]
+        },
         // go to terminal
         {
             "before": ["leader", "t", "t"],
