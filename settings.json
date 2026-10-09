@@ -305,6 +305,14 @@
     "bookmarks.saveBookmarksInProject": true,
     "bookmarks.sideBar.hideWelcome": true,
 
+    // Extensions -> Cron Tasks
+    "cronTasks.tasks": [
+        {
+            "at": "0 12 * * *",
+            "run": "vsix.update",
+        },
+    ],
+
     // ...
 
     // Extensions -> DotRush
@@ -461,10 +469,6 @@
 
     // Extensions -> VSIX Manager
     "vsix.debug": true,
-    "vsix.crons": {
-        // at 12PM, every day
-        "update": "0 12 * * *"
-    },
     // define extensions to be installed
     "vsix.extensions": [
         // allows:
