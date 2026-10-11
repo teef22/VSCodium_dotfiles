@@ -726,7 +726,7 @@
         {
             "before": ["m"],
             "after": []
-        }
+        },
     ],
     "vim.insertModeKeyBindings": [
         // =====================================================================
@@ -752,6 +752,11 @@
         {
             "before":["<C-n>"],
             "commands": [":nohl"]
+        },
+        // reset alternative "delete" binding
+        {
+            "before": ["<C-h>"],
+            "after": []
         },
     ],
     "vim.visualModeKeyBindings": [
