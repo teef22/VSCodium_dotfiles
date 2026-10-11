@@ -618,18 +618,6 @@
             "before": ["leader", "r"],
             "commands": ["editor.action.rename"]
         },
-        // 3) ==================================================================
-        // trigger suggestions
-        {
-            "before": ["<C-space>"],
-            "after": ["i"],
-            "commands": ["editor.action.triggerSuggest"]
-        },
-        {
-            "before": ["<C-j>"],
-            "after": ["i"],
-            "commands": ["editor.action.triggerSuggest"]
-        },
         // 4) ==================================================================
         // show quick open
         {
