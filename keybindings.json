@@ -123,6 +123,16 @@
         "command": "workbench.action.focusFirstEditorGroup",
         "when": "panelFocus && activePanel == 'workbench.panel.repl'"
     },
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Visual' || vim.mode == 'VisualLine' || vim.mode == 'VisualBlock')"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Visual' || vim.mode == 'VisualLine' || vim.mode == 'VisualBlock')"
+    },
     // Removed bindings
     {
         "key": "shift+alt+l",
@@ -296,6 +306,16 @@
         "key": "ctrl+k ctrl+h",
         "command": "-workbench.action.output.toggleOutput",
         "when": "workbench.panel.output.active"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
     },
 
     // // ### Vim's Keyboard Rule
