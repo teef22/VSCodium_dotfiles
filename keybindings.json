@@ -153,6 +153,21 @@
         "command": "jumpToPrevSnippetPlaceholder",
         "when": "hasPrevTabstop && inSnippetChoice && inSnippetMode && textInputFocus"
     },
+    {
+        "key": "ctrl+j",
+        "command": "showNextParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "showPrevParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+shift+space",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus && vim.mode == 'Insert'"
+    },
     // Removed bindings
     {
         "key": "shift+alt+l",
@@ -351,6 +366,31 @@
         "key": "shift+tab",
         "command": "-jumpToPrevSnippetPlaceholder",
         "when": "hasPrevTabstop && inSnippetChoice && inSnippetMode && textInputFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "-showNextParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "down",
+        "command": "-showNextParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "alt+up",
+        "command": "-showPrevParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "up",
+        "command": "-showPrevParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "ctrl+shift+space",
+        "command": "-editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
     },
 
     // // ### Vim's Keyboard Rule
