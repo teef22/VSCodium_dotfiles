@@ -587,6 +587,10 @@
             "before": ["leader", "g", "h"],
             "commands": ["editor.action.showHover"]
         },
+        {
+            "before": ["leader", "h"],
+            "commands": ["editor.action.showHover"]
+        },
         // 2) ==================================================================
         // go to next diagnostic
         {
