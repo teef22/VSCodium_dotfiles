@@ -126,30 +126,30 @@
     {
         "key": "alt+j",
         "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Visual' || vim.mode == 'VisualLine' || vim.mode == 'VisualBlock')"
+        "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine' || vim.mode == 'VisualBlock')"
     },
     {
         "key": "alt+k",
         "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Visual' || vim.mode == 'VisualLine' || vim.mode == 'VisualBlock')"
+        "when": "editorTextFocus && !editorReadonly && (vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualLine' || vim.mode == 'VisualBlock')"
     },
     {
-        "key": "alt-l",
+        "key": "alt+l",
         "command": "jumpToNextSnippetPlaceholder",
         "when": "hasNextTabstop && inSnippetMode && textInputFocus"
     },
     {
-        "key": "alt-l",
+        "key": "alt+l",
         "command": "jumpToNextSnippetPlaceholder",
         "when": "hasNextTabstop && inSnippetChoice && inSnippetMode && textInputFocus"
     },
     {
-        "key": "alt-h",
+        "key": "alt+h",
         "command": "jumpToPrevSnippetPlaceholder",
         "when": "hasPrevTabstop && inSnippetMode && textInputFocus"
     },
     {
-        "key": "alt-h",
+        "key": "alt+h",
         "command": "jumpToPrevSnippetPlaceholder",
         "when": "hasPrevTabstop && inSnippetChoice && inSnippetMode && textInputFocus"
     },
