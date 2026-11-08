@@ -6,6 +6,8 @@
     "editor.codeLens": false,
     "editor.cursorSurroundingLines": 999,
     "editor.cursorSurroundingLinesStyle": "all",
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
     "editor.lineNumbers": "relative",
     // probably affects vim extension performance
     "editor.occurrencesHighlight": "off",
@@ -19,6 +21,7 @@
     "editor.showFoldingControls": "always",
     // probably affects vim extension performance
     "editor.stickyScroll.enabled": false,
+    "editor.tabSize": 4,
     "editor.trimWhitespaceOnDelete": true,
 
     // Text Editor -> Cursor
