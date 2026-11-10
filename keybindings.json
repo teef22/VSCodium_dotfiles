@@ -168,6 +168,11 @@
         "command": "editor.action.triggerParameterHints",
         "when": "editorHasSignatureHelpProvider && editorTextFocus && vim.mode == 'Insert'"
     },
+    // OpenCode centric
+    {
+        "key": "ctrl+alt+f",
+        "command": "opencode.addFilepathToTerminal"
+    },
     // Removed bindings
     {
         "key": "shift+alt+l",
@@ -391,6 +396,18 @@
         "key": "ctrl+shift+space",
         "command": "-editor.action.triggerParameterHints",
         "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "-opencode.addFilepathToTerminal"
+    },
+    {
+        "key": "ctrl+escape",
+        "command": "-opencode.openTerminal"
+    },
+    {
+        "key": "ctrl+shift+escape",
+        "command": "-opencode.openNewTerminal"
     },
 
     // // ### Vim's Keyboard Rule
