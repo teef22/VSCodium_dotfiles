@@ -168,6 +168,16 @@
         "command": "editor.action.triggerParameterHints",
         "when": "editorHasSignatureHelpProvider && editorTextFocus && vim.mode == 'Insert'"
     },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "editorTextFocus && vim.mode == 'Normal' && !inSnippetMode"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "editorTextFocus && vim.mode == 'Normal' && !inSnippetMode"
+    },
     // OpenCode centric
     {
         "key": "ctrl+alt+f",
