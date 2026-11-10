@@ -631,6 +631,22 @@
             "before": ["[", "D"],
             "commands": ["editor.action.marker.prevInFiles"]
         },
+        {
+            "before": ["]", "c"],
+            "commands": ["workbench.action.editor.nextChange"]
+        },
+        {
+            "before": ["[", "c"],
+            "commands": ["workbench.action.editor.previousChange"]
+        },
+        {
+            "before": ["]", "C"],
+            "commands": ["editor.action.dirtydiff.next"]
+        },
+        {
+            "before": ["[", "C"],
+            "commands": ["editor.action.dirtydiff.previous"]
+        },
         // code action
         {
             "before": ["leader", "c", "a"],
