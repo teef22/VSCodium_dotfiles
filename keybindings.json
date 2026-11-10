@@ -409,6 +409,16 @@
         "key": "ctrl+shift+escape",
         "command": "-opencode.openNewTerminal"
     },
+    {
+        "key": "ctrl+k shift+enter",
+        "command": "-workbench.action.pinEditor",
+        "when": "!activeEditorIsPinned"
+    },
+    {
+        "key": "ctrl+k shift+enter",
+        "command": "-workbench.action.unpinEditor",
+        "when": "activeEditorIsPinned"
+    },
 
     // // ### Vim's Keyboard Rule
 

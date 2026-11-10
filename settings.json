@@ -703,6 +703,14 @@
             "before": ["leader", "t", "t"],
             "commands": ["workbench.action.terminal.toggleTerminal"]
         },
+        {
+            "before": ["<leader>", "t", "p"],
+            "commands": ["workbench.action.pinEditor"]
+        },
+        {
+            "before": ["<leader>", "t", "<S-p>"],
+            "commands": ["workbench.action.unpinEditor"]
+        },
         // =====================================================================
         // save file
         {
