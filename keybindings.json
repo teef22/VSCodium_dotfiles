@@ -173,6 +173,10 @@
         "key": "ctrl+alt+f",
         "command": "opencode.addFilepathToTerminal"
     },
+    {
+        "key": "ctrl+alt+k",
+        "command": "opencode.addFilepathToTerminal"
+    },
     // Removed bindings
     {
         "key": "shift+alt+l",
@@ -396,10 +400,6 @@
         "key": "ctrl+shift+space",
         "command": "-editor.action.triggerParameterHints",
         "when": "editorHasSignatureHelpProvider && editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+k",
-        "command": "-opencode.addFilepathToTerminal"
     },
     {
         "key": "ctrl+escape",
